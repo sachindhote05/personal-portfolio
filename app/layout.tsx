@@ -18,12 +18,6 @@ export const metadata: Metadata = {
   title: "Sachin Dhote — Creative Web Developer",
   description:
     "Creative Web Developer & Frontend Developer based in India. Building modern digital experiences with React, Next.js and TypeScript.",
-  openGraph: {
-    title: "Sachin Dhote — Creative Web Developer",
-    description:
-      "I build modern digital experiences that combine clean development, thoughtful design and engaging interactions.",
-    type: "website",
-  },
 };
 
 export default function RootLayout({
@@ -33,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
-      <body className="grain">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
